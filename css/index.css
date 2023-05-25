@@ -120,8 +120,7 @@ header .inner > div > div a:hover {
   background-color: #f9f9f9;
 }
 header .inner > div > div button {
-  padding: 4px;
-  width: 40px;
+  width: 30px;
   height: 50px;
   background-color: transparent;
   border: none;
@@ -133,3 +132,9 @@ header .inner > div > div button:last-child {
 }
 
 /* header 끝 */
+/* main 시작 */
+main {
+  padding-top: 110px;
+}
+
+/* main 끝 */
