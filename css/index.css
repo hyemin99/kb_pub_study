@@ -35,16 +35,19 @@
   color: #000;
   text-decoration: none;
   list-style: none;
+  box-sizing: border-box;
 }
 
 html,
 body {
   font-size: 62.5%;
   font-family: "SpoqaHanSansNeo", "sans-serif";
+  font-weight: 300;
 }
 
 #wrap {
   background-color: #f9f9f9;
+  letter-spacing: -1px;
 }
 #wrap img {
   max-width: 100%;
@@ -130,9 +133,10 @@ header .inner > div ul {
 header .inner > div ul li a {
   padding: 10px;
   font-size: 1.4rem;
+  font-weight: 300;
 }
 header .inner > div ul li:hover a {
-  font-weight: bold;
+  font-weight: 500;
 }
 header .inner > div > div {
   display: flex;
@@ -162,9 +166,56 @@ header .inner > div > div button:not(:last-child) {
 }
 
 /* header 끝 */
-/* main 시작 */
+/*main 시작*/
 main {
   padding-top: 110px;
 }
+main h2 {
+  margin-bottom: 30px;
+  font: 800 2.8rem "KBFGDisplay", "sans-serif";
+  color: #303033;
+}
+main h2 span {
+  font: 300 1.8rem "SpoqaHanSansNeo", "sans-serif";
+}
+main section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main section .left_box ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: -10px;
+  width: 550px;
+  height: 500px;
+}
+main section .left_box ul > li {
+  margin: 0 10px;
+  width: calc(50% - 20px);
+  height: 240px;
+}
+main section .left_box ul > li a {
+  display: block;
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #e6e6e6;
+  border-radius: 20px;
+  background-color: #fff;
+}
+main section .left_box ul > li a > strong {
+  display: block;
+  margin-bottom: 16px;
+  font: 700 2rem "KBFGDisplay", "sans-serif";
+  color: #303030;
+}
+main section .left_box ul > li:nth-child(1),
+main section .left_box ul > li:nth-child(2) {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #707070;
+}
 
-/* main 끝 */
+/*main 끝*/

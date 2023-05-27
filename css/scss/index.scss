@@ -2,6 +2,7 @@
 
 #wrap {
     background-color: #f9f9f9;
+    letter-spacing: -1px;
 
     img {
         max-width: 100%;
@@ -103,11 +104,12 @@ header {
                     a{
                         padding: 10px;
                         font-size: 1.4rem;
+                        font-weight: 300;
                     }
 
                     &:hover {
                         a {
-                            font-weight: bold;
+                            font-weight: 500;
                         }
                     }
                 }
@@ -151,5 +153,66 @@ header {
 /*main 시작*/
 main {
     padding-top: 110px;
+
+    h2 {
+        margin-bottom: 30px;
+        font: 800 2.8rem "KBFGDisplay", "sans-serif";
+        color: #303033;
+
+        span {
+            font: 300 1.8rem "SpoqaHanSansNeo", "sans-serif";
+        }
+    }
+
+    section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .left_box {
+           
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin-left: -10px;
+                width: 550px;
+                height: 500px;
+                
+                > li {
+                    margin: 0 10px;
+                    width: calc(50% - 20px);
+                    height: 240px;
+
+                    a{
+                        display: block;
+                        padding: 40px;
+                        width: 100%;
+                        height: 100%;
+                        border: 1px solid #e6e6e6;
+                        border-radius: 20px;
+                        background-color: #fff;
+
+
+                        > strong {
+                            display: block;
+                            margin-bottom: 16px;
+                            font: 700 2.0rem "KBFGDisplay", "sans-serif";
+                            color: #303030;
+                        }
+
+                    }
+                }
+                > li:nth-child(1),
+                > li:nth-child(2) {
+                    margin-bottom: 20px;
+                    font-size: 1.5rem;
+                    color: #707070;
+                }
+            }
+         
+        }
+    }
 }
 /*main 끝*/
