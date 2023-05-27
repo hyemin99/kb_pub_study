@@ -46,6 +46,7 @@ header {
     
         // nav 시작
         nav {
+            display: flex;
             margin-left: 20px;
             margin-right: auto;
             height: 100%;
@@ -59,8 +60,8 @@ header {
                     position: relative;
     
                     a {
-                        padding: 20px;
-                        font-size: 1.8rem;
+                        padding: 10px 20px;
+                        font: 700 1.8rem "KBFGDisplay", "sans-serif";   
                     }
     
                     &:hover {
@@ -71,7 +72,7 @@ header {
                                 content: '';
                                 position: absolute;
                                 left: 50%;
-                                bottom: 10px;
+                                bottom: 2px;
                                 transform: translateY(-50%);
                                 width: 4px;
                                 height: 4px;
@@ -147,8 +148,3 @@ header {
     } 
 }
 /* header 끝 */
-/* main content 시작 */
-main {
-    padding-top: 110px;
-}
-/* main content 끝 */
