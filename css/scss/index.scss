@@ -149,7 +149,7 @@ header {
 /* header 끝 */
 /*main 시작*/
 main {
-    padding: 0 40px;
+    padding: 40px 0;
 
     h2 {
         margin-bottom: 30px;
@@ -407,12 +407,52 @@ main {
                     }
                 }
             }
-
-            
             // banner_box 끝
-
         }
         // right box 끝
+    } 
+    /* chabot 시작 */ 
+    .chatbot_box {
+        position: fixed;
+        right: 80px;
+        bottom: 80px;
+
+        span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            background-color: #ffcc00;
+            border-radius: 100%;
+            box-shadow: 0 3px 20px rgba(167, 123, 0, 0.4);
+
+            &:hover {
+                box-shadow: 0 3px 20px rgba(80, 60, 5, 0.4);
+            }
+            img {
+                width: 50px;
+            }
+        }
+
+        // 챗 버블
+        a {
+            position: absolute;
+            z-index: -100;
+            right: 40px;
+            bottom: 40px;
+            padding: 18px 25px;
+            width: 300px;
+            height: 80px;
+            overflow: hidden;
+            line-height: 1.6;
+            font-size: 14px;
+            font-weight: 500;
+            color: #fff;
+            background-color: #003471;
+            border-radius: 24px 24px 6px 24px;
+        }
     }
+    /* chabot 끝 */ 
 }
 /*main 끝*/
