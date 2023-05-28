@@ -435,7 +435,7 @@ main {
             }
         }
 
-        // 챗 버블
+        // 말풍선
         a {
             position: absolute;
             z-index: -100;
@@ -444,6 +444,7 @@ main {
             padding: 18px 25px;
             width: 300px;
             height: 80px;
+            transform: scale(0);
             overflow: hidden;
             line-height: 1.6;
             font-size: 14px;
