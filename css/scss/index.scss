@@ -208,20 +208,20 @@ main {
                 // 백그라운드 이미지 관리
                 > li:nth-child(1) {
                     margin-bottom: 20px;
-                    background: #fff url("../../assets/img/icon_car.png") no-repeat right 40px bottom 40px;
+                    background: #fff url("../../assets/img/icon_car.png") right 40px bottom 40px no-repeat;
                     background-size: 48px;
                 }
                 > li:nth-child(2) {
                     margin-bottom: 20px;
-                    background: #fff url("../../assets/img/icon_coin.png") no-repeat right 40px bottom 40px;
+                    background: #fff url("../../assets/img/icon_coin.png") right 40px bottom 40px no-repeat;
                     background-size: 48px;
                 }
                 > li:nth-child(3) {
-                    background: #fff url("../../assets/img/icon_corp.png") no-repeat right 40px bottom 40px;
+                    background: #fff url("../../assets/img/icon_corp.png") right 40px bottom 40px no-repeat;
                     background-size: 48px;
                 }
                 > li:nth-child(4) {
-                    background: #fff url("../../assets/img/icon_person.png") no-repeat right 40px bottom 40px;
+                    background: #fff url("../../assets/img/icon_person.png") right 40px bottom 40px no-repeat;
                     background-size: 48px;
                 }
 
@@ -284,13 +284,13 @@ main {
                         }
 
                         &.item01 {
-                            background: url(../../assets/img/icon_prod_car.png) no-repeat 50% calc(50% - 10px)/40px;
+                            background: url(../../assets/img/icon_prod_car.png) 50% calc(50% - 10px)/40px no-repeat;
                         }
                         &.item02 {
-                            background: url(../../assets/img/icon_prod_car01.png) no-repeat 50% calc(50% - 10px)/40px;
+                            background: url(../../assets/img/icon_prod_car01.png) 50% calc(50% - 10px)/40px no-repeat;
                         }
                         &.item03 {
-                            background: url(../../assets/img/icon_prod_coin.png) no-repeat 50% calc(50% - 10px)/40px 40px;
+                            background: url(../../assets/img/icon_prod_coin.png) 50% calc(50% - 10px)/40px no-repeat;
                         }
 
                         a{ 
@@ -314,9 +314,7 @@ main {
 
                     h3 {
                         margin-bottom: 20px;
-                        font-family: "KBFGDisplay";
-                        font-weight: 700;
-                        font-size: 2rem;
+                        font: 700 2rem "KBFGDisplay";
                     }
 
                     ul {
@@ -330,7 +328,7 @@ main {
                             > a {
                                 display: block;
                                 position: relative;
-                                font-size: 15px;
+                                font-size: 1.5rem;
                                 color: #303030;
 
                                 &::after {
@@ -340,7 +338,7 @@ main {
                                     right: -12px;
                                     width: 30px;
                                     height: 100%;
-                                    background: url('../../assets/img/icon_arrow_r.png') no-repeat right center;
+                                    background: url('../../assets/img/icon_arrow_r.png') right center no-repeat ;
                                     background-size: 30px;
                                 }
                             }
@@ -350,7 +348,7 @@ main {
                     p {
                         text-align: center;
                         line-height: 1.5;
-                        font-size: 15px;
+                        font-size: 1.5rem;
                         color: #707070;
                     }
 
@@ -359,11 +357,11 @@ main {
                         top: 0;
                         right: 0;
                         width: 54px;
-                        font-size: 15px;
+                        font-size: 1.5rem;
                         text-align: right;
                         line-height: 30px;
                         color: #707070;
-                        background: url('../../assets/img/icon_plus.png') no-repeat left center;
+                        background: url('../../assets/img/icon_plus.png') left center no-repeat ;
                     }
                 }
 
@@ -388,19 +386,16 @@ main {
                             padding: 27px 30px 0;
                             width: 100%;
                             height: 100%;
-                            background: #e6ebff url('../../assets/img/img_banner_bear.png') no-repeat right 20px center;
+                            background: #e6ebff url('../../assets/img/img_banner_bear.png') right 20px center no-repeat;
 
                             strong {
-                                font-family: "KBFGDisplay";
-                                line-height: 1.2;
-                                font-size: 18px;
-                                font-weight: 700;
+                                font: 700 18px "KBFGDisplay";
                                 color: #303030;
                             }
 
                             p {
                                 margin-top: 6px;
-                                font-size: 14px;
+                                font-size: 1.4rem;
                                 color: #707070;
                             }
                         }
@@ -454,7 +449,7 @@ main {
             transition: all 0.5s ease;
             overflow: hidden;
             line-height: 1.6;
-            font-size: 14px;
+            font-size: 1.4rem;
             font-weight: 500;
             color: #fff;
             background-color: #003471;
@@ -465,4 +460,74 @@ main {
 }
 /*main 끝*/
 /* footer 시작 */ 
+footer {
+    .inner {
+        border-top: 1px solid #e6e6e6;
+        padding-top: 25px;
+    }
+
+    // cscenter call 시작
+    .customer_box {
+        display: flex;
+        margin-bottom: 30px;
+
+        > li {
+            padding-left:  30px;
+
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+
+            span {
+                font-size: 1.3rem;
+                margin-right: 12px;
+            }
+    
+            // 넘버 
+            strong {
+                font: 800 20px "KBFGDisplay";
+                color: #303030;
+    
+                &.color_brown {
+                    color: #776c61;
+                }
+            }
+
+            &.type01 {
+                background: url('../../assets/img/icon_call01.png') left center/24px no-repeat;
+            }
+            &.type02 {
+                background: url('../../assets/img/icon_call02.png') left center/24px no-repeat;
+            }
+            &.type03 {
+                background: url('../../assets/img/icon_call03.png') left center/24px no-repeat;
+            }
+            &.type04 {
+                background: url('../../assets/img/icon_call04.png') left center/24px no-repeat;
+            }
+            &.type05 {
+                background: url('../../assets/img/icon_call05.png') left center/24px no-repeat;
+            }
+        }
+    }
+    // cscenter call 끝
+    .under_box {
+        display: flex;
+        .left_box {
+
+            ul{
+                display: flex;
+                > li {
+                    &:not(:last-child) {
+                        margin-right: 40px;
+                    }
+
+                    a {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+}
 /* footer 끝 */ 

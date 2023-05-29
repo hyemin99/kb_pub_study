@@ -217,20 +217,20 @@ main section .left_box ul > li a > p {
 }
 main section .left_box ul > li:nth-child(1) {
   margin-bottom: 20px;
-  background: #fff url("../../assets/img/icon_car.png") no-repeat right 40px bottom 40px;
+  background: #fff url("../../assets/img/icon_car.png") right 40px bottom 40px no-repeat;
   background-size: 48px;
 }
 main section .left_box ul > li:nth-child(2) {
   margin-bottom: 20px;
-  background: #fff url("../../assets/img/icon_coin.png") no-repeat right 40px bottom 40px;
+  background: #fff url("../../assets/img/icon_coin.png") right 40px bottom 40px no-repeat;
   background-size: 48px;
 }
 main section .left_box ul > li:nth-child(3) {
-  background: #fff url("../../assets/img/icon_corp.png") no-repeat right 40px bottom 40px;
+  background: #fff url("../../assets/img/icon_corp.png") right 40px bottom 40px no-repeat;
   background-size: 48px;
 }
 main section .left_box ul > li:nth-child(4) {
-  background: #fff url("../../assets/img/icon_person.png") no-repeat right 40px bottom 40px;
+  background: #fff url("../../assets/img/icon_person.png") right 40px bottom 40px no-repeat;
   background-size: 48px;
 }
 main section .right_box {
@@ -279,13 +279,13 @@ main section .right_box .service_box ul > li::before {
   background-color: #e6e6e6;
 }
 main section .right_box .service_box ul > li.item01 {
-  background: url(../../assets/img/icon_prod_car.png) no-repeat 50% calc(50% - 10px)/40px;
+  background: url(../../assets/img/icon_prod_car.png) 50% calc(50% - 10px)/40px no-repeat;
 }
 main section .right_box .service_box ul > li.item02 {
-  background: url(../../assets/img/icon_prod_car01.png) no-repeat 50% calc(50% - 10px)/40px;
+  background: url(../../assets/img/icon_prod_car01.png) 50% calc(50% - 10px)/40px no-repeat;
 }
 main section .right_box .service_box ul > li.item03 {
-  background: url(../../assets/img/icon_prod_coin.png) no-repeat 50% calc(50% - 10px)/40px 40px;
+  background: url(../../assets/img/icon_prod_coin.png) 50% calc(50% - 10px)/40px no-repeat;
 }
 main section .right_box .service_box ul > li a {
   margin-top: 50px;
@@ -303,9 +303,7 @@ main section .right_box .notice_box > div {
 }
 main section .right_box .notice_box > div h3 {
   margin-bottom: 20px;
-  font-family: "KBFGDisplay";
-  font-weight: 700;
-  font-size: 2rem;
+  font: 700 2rem "KBFGDisplay";
 }
 main section .right_box .notice_box > div ul li {
   line-height: 1.2;
@@ -316,7 +314,7 @@ main section .right_box .notice_box > div ul li:not(:last-child) {
 main section .right_box .notice_box > div ul li > a {
   display: block;
   position: relative;
-  font-size: 15px;
+  font-size: 1.5rem;
   color: #303030;
 }
 main section .right_box .notice_box > div ul li > a::after {
@@ -326,13 +324,13 @@ main section .right_box .notice_box > div ul li > a::after {
   right: -12px;
   width: 30px;
   height: 100%;
-  background: url("../../assets/img/icon_arrow_r.png") no-repeat right center;
+  background: url("../../assets/img/icon_arrow_r.png") right center no-repeat;
   background-size: 30px;
 }
 main section .right_box .notice_box > div p {
   text-align: center;
   line-height: 1.5;
-  font-size: 15px;
+  font-size: 1.5rem;
   color: #707070;
 }
 main section .right_box .notice_box > div .btn_more {
@@ -340,11 +338,11 @@ main section .right_box .notice_box > div .btn_more {
   top: 0;
   right: 0;
   width: 54px;
-  font-size: 15px;
+  font-size: 1.5rem;
   text-align: right;
   line-height: 30px;
   color: #707070;
-  background: url("../../assets/img/icon_plus.png") no-repeat left center;
+  background: url("../../assets/img/icon_plus.png") left center no-repeat;
 }
 main section .right_box .banner_box {
   display: flex;
@@ -361,18 +359,15 @@ main section .right_box .banner_box > li.direct_car > a {
   padding: 27px 30px 0;
   width: 100%;
   height: 100%;
-  background: #e6ebff url("../../assets/img/img_banner_bear.png") no-repeat right 20px center;
+  background: #e6ebff url("../../assets/img/img_banner_bear.png") right 20px center no-repeat;
 }
 main section .right_box .banner_box > li.direct_car > a strong {
-  font-family: "KBFGDisplay";
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: 700;
+  font: 700 18px "KBFGDisplay";
   color: #303030;
 }
 main section .right_box .banner_box > li.direct_car > a p {
   margin-top: 6px;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #707070;
 }
 main .chatbot_box {
@@ -412,7 +407,7 @@ main .chatbot_box a {
   transition: all 0.5s ease;
   overflow: hidden;
   line-height: 1.6;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 500;
   color: #fff;
   background-color: #003471;
@@ -421,4 +416,57 @@ main .chatbot_box a {
 
 /*main 끝*/
 /* footer 시작 */
+footer .inner {
+  border-top: 1px solid #e6e6e6;
+  padding-top: 25px;
+}
+footer .customer_box {
+  display: flex;
+  margin-bottom: 30px;
+}
+footer .customer_box > li {
+  padding-left: 30px;
+}
+footer .customer_box > li:not(:last-child) {
+  margin-right: 30px;
+}
+footer .customer_box > li span {
+  font-size: 1.3rem;
+  margin-right: 12px;
+}
+footer .customer_box > li strong {
+  font: 800 20px "KBFGDisplay";
+  color: #303030;
+}
+footer .customer_box > li strong.color_brown {
+  color: #776c61;
+}
+footer .customer_box > li.type01 {
+  background: url("../../assets/img/icon_call01.png") left center/24px no-repeat;
+}
+footer .customer_box > li.type02 {
+  background: url("../../assets/img/icon_call02.png") left center/24px no-repeat;
+}
+footer .customer_box > li.type03 {
+  background: url("../../assets/img/icon_call03.png") left center/24px no-repeat;
+}
+footer .customer_box > li.type04 {
+  background: url("../../assets/img/icon_call04.png") left center/24px no-repeat;
+}
+footer .customer_box > li.type05 {
+  background: url("../../assets/img/icon_call05.png") left center/24px no-repeat;
+}
+footer .under_box {
+  display: flex;
+}
+footer .under_box .left_box ul {
+  display: flex;
+}
+footer .under_box .left_box ul > li:not(:last-child) {
+  margin-right: 40px;
+}
+footer .under_box .left_box ul > li a {
+  font-size: 1.4rem;
+}
+
 /* footer 끝 */
