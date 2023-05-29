@@ -511,23 +511,92 @@ footer {
         }
     }
     // cscenter call 끝
+    // under box 시작
     .under_box {
         display: flex;
+        justify-content: space-between;
+
+        // left box 시작
         .left_box {
 
             ul{
                 display: flex;
+                margin-bottom: 15px;
+
                 > li {
+                    padding: 0 20px;
+
+                    &:first-child {
+                        padding-left: 0;
+                    }
+
                     &:not(:last-child) {
-                        margin-right: 40px;
+                        border-right: solid 1px #e6e6e6;
                     }
 
                     a {
                         font-size: 1.4rem;
+                        font-weight: 500;
+                        color: #707070;
+
+                        &.color_black {
+                            color: #303030;
+                        }
                     }
                 }
             }
+
+            address {
+                font-style: normal;
+
+                ul {
+                    margin-bottom: 0;
+                    font-size: 1.3rem;
+
+                    li {
+                        padding: 0 8px;
+                        color: #707070;
+
+                        &:not(:last-child) {
+                            border-right: solid 1px #707070;
+                        }
+                    }
+                }
+
+                p {
+                    font-size: 1.1rem;
+                    color: #707070;
+                }
+            }
         }
+        // left box 끝
+        // right box 시작
+        .right_box {
+
+            button {
+                cursor: pointer;
+                margin-bottom: 10px;
+                padding: 12px 20px;
+                width: 100%;
+                color: #707070;
+                font-size: 1.4rem;
+                text-align: left;
+                border: 1px solid #e6e6e6;
+                border-radius: 10px;
+                background: #fff url('../../assets/img/icon_familysite_close.png') right 20px center/9px no-repeat;
+            }
+
+            ul {
+                display: flex;
+
+                > li:first-child {
+                    margin-right: 4px;
+                }
+            }
+        }
+        
+        // right box 시작
     }
+    // under box 끝
 }
 /* footer 끝 */ 

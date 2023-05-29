@@ -458,15 +458,64 @@ footer .customer_box > li.type05 {
 }
 footer .under_box {
   display: flex;
+  justify-content: space-between;
 }
 footer .under_box .left_box ul {
   display: flex;
+  margin-bottom: 15px;
+}
+footer .under_box .left_box ul > li {
+  padding: 0 20px;
+}
+footer .under_box .left_box ul > li:first-child {
+  padding-left: 0;
 }
 footer .under_box .left_box ul > li:not(:last-child) {
-  margin-right: 40px;
+  border-right: solid 1px #e6e6e6;
 }
 footer .under_box .left_box ul > li a {
   font-size: 1.4rem;
+  font-weight: 500;
+  color: #707070;
+}
+footer .under_box .left_box ul > li a.color_black {
+  color: #303030;
+}
+footer .under_box .left_box address {
+  font-style: normal;
+}
+footer .under_box .left_box address ul {
+  margin-bottom: 0;
+  font-size: 1.3rem;
+}
+footer .under_box .left_box address ul li {
+  padding: 0 8px;
+  color: #707070;
+}
+footer .under_box .left_box address ul li:not(:last-child) {
+  border-right: solid 1px #707070;
+}
+footer .under_box .left_box address p {
+  font-size: 1.1rem;
+  color: #707070;
+}
+footer .under_box .right_box button {
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding: 12px 20px;
+  width: 100%;
+  color: #707070;
+  font-size: 1.4rem;
+  text-align: left;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  background: #fff url("../../assets/img/icon_familysite_close.png") right 20px center/9px no-repeat;
+}
+footer .under_box .right_box ul {
+  display: flex;
+}
+footer .under_box .right_box ul > li:first-child {
+  margin-right: 4px;
 }
 
 /* footer 끝 */
