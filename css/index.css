@@ -487,7 +487,7 @@ main .chatbot_box a {
 /* footer 시작 */
 footer .inner {
   border-top: 1px solid #e6e6e6;
-  padding-top: 25px;
+  padding: 25px 0;
 }
 footer .customer_box {
   display: flex;
@@ -535,12 +535,20 @@ footer .under_box .left_box ul {
 }
 footer .under_box .left_box ul > li {
   padding: 0 20px;
+  position: relative;
 }
 footer .under_box .left_box ul > li:first-child {
   padding-left: 0;
 }
-footer .under_box .left_box ul > li:not(:last-child) {
-  border-right: solid 1px #e6e6e6;
+footer .under_box .left_box ul > li::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 80%;
+  background-color: #e6e6e6;
 }
 footer .under_box .left_box ul > li a {
   font-size: 1.4rem;
@@ -558,11 +566,16 @@ footer .under_box .left_box address ul {
   font-size: 1.3rem;
 }
 footer .under_box .left_box address ul li {
-  padding: 0 8px;
   color: #707070;
+  padding: 0 10px;
+  position: relative;
 }
-footer .under_box .left_box address ul li:not(:last-child) {
-  border-right: solid 1px #707070;
+footer .under_box .left_box address ul li:first-child {
+  padding-left: 0;
+}
+footer .under_box .left_box address ul li::after {
+  height: 50%;
+  background-color: #a0a0a0;
 }
 footer .under_box .left_box address p {
   font-size: 1.1rem;
