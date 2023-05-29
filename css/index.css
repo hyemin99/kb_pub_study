@@ -393,6 +393,9 @@ main .chatbot_box span {
 main .chatbot_box span:hover {
   box-shadow: 0 3px 20px rgba(80, 60, 5, 0.4);
 }
+main .chatbot_box span:hover + a {
+  transform: scale(1);
+}
 main .chatbot_box span img {
   width: 50px;
 }
@@ -405,6 +408,8 @@ main .chatbot_box a {
   width: 300px;
   height: 80px;
   transform: scale(0);
+  transform-origin: right bottom;
+  transition: all 0.5s ease;
   overflow: hidden;
   line-height: 1.6;
   font-size: 14px;

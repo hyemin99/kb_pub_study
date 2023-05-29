@@ -430,6 +430,11 @@ main {
             &:hover {
                 box-shadow: 0 3px 20px rgba(80, 60, 5, 0.4);
             }
+
+            &:hover + a {
+                transform: scale(1);
+            }
+
             img {
                 width: 50px;
             }
@@ -445,6 +450,8 @@ main {
             width: 300px;
             height: 80px;
             transform: scale(0);
+            transform-origin: right bottom;
+            transition: all 0.5s ease;
             overflow: hidden;
             line-height: 1.6;
             font-size: 14px;
