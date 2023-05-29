@@ -540,7 +540,7 @@ footer .under_box .left_box ul > li {
 footer .under_box .left_box ul > li:first-child {
   padding-left: 0;
 }
-footer .under_box .left_box ul > li::after {
+footer .under_box .left_box ul > li:not(:last-child):after {
   content: "";
   position: absolute;
   right: 0;
@@ -573,7 +573,7 @@ footer .under_box .left_box address ul li {
 footer .under_box .left_box address ul li:first-child {
   padding-left: 0;
 }
-footer .under_box .left_box address ul li::after {
+footer .under_box .left_box address ul li:not(:last-child)::after {
   height: 50%;
   background-color: #a0a0a0;
 }

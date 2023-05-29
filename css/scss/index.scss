@@ -613,7 +613,7 @@ footer {
                         padding-left: 0;
                     }
 
-                    &::after {
+                    &:not(:last-child):after {
                         content: "";
                         position: absolute;
                         right: 0;
@@ -652,7 +652,7 @@ footer {
                             padding-left: 0;
                         }
 
-                        &::after {
+                        &:not(:last-child)::after {
                             height: 50%;
                             background-color: #a0a0a0;
                         }
