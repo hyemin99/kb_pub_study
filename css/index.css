@@ -193,17 +193,50 @@ main section .left_box ul {
   margin-left: -10px;
 }
 main section .left_box ul > li {
+  position: relative;
   margin: 0 10px;
   width: calc(50% - 20px);
   height: 240px;
   border: 1px solid #e6e6e6;
   border-radius: 20px;
+  overflow: hidden;
 }
 main section .left_box ul > li a {
   display: block;
   padding: 40px;
   width: 100%;
   height: 100%;
+}
+main section .left_box ul > li a::before {
+  content: "";
+  position: absolute;
+  right: -50px;
+  bottom: -60px;
+  opacity: 0;
+  transform: scale(1.4);
+  transform-origin: center;
+  width: 90%;
+  height: 90%;
+}
+main section .left_box ul > li a::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  bottom: -100%;
+  right: -20px;
+  width: 180px;
+  height: 160px;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+main section .left_box ul > li a:hover::before {
+  opacity: 1;
+  transform: scale(0.75);
+  transition: all 0.4s ease-in;
+}
+main section .left_box ul > li a:hover::after {
+  bottom: -40px;
+  opacity: 1;
 }
 main section .left_box ul > li a > strong {
   display: block;
@@ -220,18 +253,54 @@ main section .left_box ul > li:nth-child(1) {
   background: #fff url("../../assets/img/icon_car.png") right 40px bottom 40px no-repeat;
   background-size: 48px;
 }
+main section .left_box ul > li:nth-child(1) a::before {
+  background: url("../../assets/img/bg_card01.png") center/contain no-repeat;
+}
+main section .left_box ul > li:nth-child(1) a::after {
+  background: url("../../assets/img/img_card01.png") center/180px no-repeat;
+}
+main section .left_box ul > li:nth-child(1) a:hover {
+  background: linear-gradient(to bottom right, #FFECA8, #FFD131);
+}
 main section .left_box ul > li:nth-child(2) {
   margin-bottom: 20px;
   background: #fff url("../../assets/img/icon_coin.png") right 40px bottom 40px no-repeat;
   background-size: 48px;
 }
+main section .left_box ul > li:nth-child(2) a::before {
+  background: url("../../assets/img/bg_card02.png") center/contain no-repeat;
+}
+main section .left_box ul > li:nth-child(2) a::after {
+  background: url("../../assets/img/img_card02.png") center/180px no-repeat;
+}
+main section .left_box ul > li:nth-child(2) a:hover {
+  background: linear-gradient(to bottom right, #DFF0A9, #C9DD8C);
+}
 main section .left_box ul > li:nth-child(3) {
   background: #fff url("../../assets/img/icon_corp.png") right 40px bottom 40px no-repeat;
   background-size: 48px;
 }
+main section .left_box ul > li:nth-child(3) a::before {
+  background: url("../../assets/img/bg_card03.png") center/contain no-repeat;
+}
+main section .left_box ul > li:nth-child(3) a::after {
+  background: url("../../assets/img/img_card03.png") center/180px no-repeat;
+}
+main section .left_box ul > li:nth-child(3) a:hover {
+  background: linear-gradient(to bottom right, #E2D9F4, #C7D0F7);
+}
 main section .left_box ul > li:nth-child(4) {
   background: #fff url("../../assets/img/icon_person.png") right 40px bottom 40px no-repeat;
   background-size: 48px;
+}
+main section .left_box ul > li:nth-child(4) a::before {
+  background: url("../../assets/img/bg_card04.png") center/contain no-repeat;
+}
+main section .left_box ul > li:nth-child(4) a::after {
+  background: url("../../assets/img/img_card04.png") center/180px no-repeat;
+}
+main section .left_box ul > li:nth-child(4) a:hover {
+  background: linear-gradient(to bottom right, #FFE0C6, #F7B983);
 }
 main section .right_box {
   width: 860px;
